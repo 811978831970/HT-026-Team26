@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Categories - Retail Store</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+}
+
+/* Page Title */
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Categories Section */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Category Card */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #e68900;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+</div>
+
+<!-- Title -->
+<div class="title">
+    <h1>Shop By Categories</h1>
+    <p>Select your favorite category</p>
+</div>
+
+<!-- Categories Grid -->
+<div class="categories">
+
+    <div class="card">
+        <img src="Electronics product.jpg" alt="Electronics">
+        <h3>Electronics</h3>
+        <button>View Products</button>
+    </div>
+
+    <div class="card">
+        <img src="clothing product.jpg" alt="Clothing">
+        <h3>Clothing</h3>
+        <button>View Products</button>
+    </div>
+
+    <div class="card">
+        <img src="Shoes product image.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <button>View Products</button>
+    </div>
+
+    <div class="card">
+        <img src="Grocery product.jpg" alt="Groceries">
+        <h3>Groceries</h3>
+        <button>View Products</button>
+    </div>
+
+    <div class="card">
+        <img src="beauty product.jpg" alt="Beauty">
+        <h3>Beauty</h3>
+        <button>View Products</button>
+    </div>
+
+    <div class="card">
+        <img src="Furniture product.jpg" alt="Furniture">
+        <h3>Furniture</h3>
+        <button>View Products</button>
+    </div>
+
+</div>
+
+</body>
+</html>
