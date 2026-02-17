@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart - ShopEasy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>ShopEasy</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="cart-section">
+    <h1>Your Shopping Cart</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+
+    <div class="cart-summary">
+        <h2>Total: ₹<span id="cart-total">0</span></h2>
+        <button onclick="clearCart()">Clear Cart</button>
+        <a href="payment.html">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </a>
+    </div>
+</section>
+
+<script src="js/cart.js"></script>
+</body>
+</html>
